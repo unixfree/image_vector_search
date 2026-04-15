@@ -1,0 +1,9 @@
+# OpenAI API Key (CLIP 모델 로컬 사용 시 필수 아님, OpenAI API 사용 시 필요)
+OPENAI_API_KEY=your_openai_api_key_here
+
+# PostgreSQL Connection String
+DB_NAME=edb
+DB_USER=enterprisedb
+DB_PASSWORD=enterprisedb
+DB_HOST=localhost
+DB_PORT=5444
