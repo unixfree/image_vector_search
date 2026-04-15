@@ -42,8 +42,10 @@ streamlit run app.py
 ```
 
 #### 핵심 포인트 설명
-Vector 연산자 (<=>): pgvector에서 제공하는 연산자로, 벡터 간의 코사인 거리를 계산합니다. 1 - distance를 하면 유사도가 됩니다.
-
-CLIP 모델: OpenAI가 공개한 이 모델은 이미지뿐만 아니라 텍스트로도 이미지를 찾을 수 있게 해줍니다 (model.encode("A cute dog")를 쿼리로 사용 가능).
-
-성능 최적화: 데이터가 많아지면 CREATE INDEX ON image_embeddings USING hnsw (embedding vector_cosine_ops); 명령으로 HNSW 인덱스를 생성해 검색 속도를 높이세요.
+Vector 연산자 (<=>): pgvector에서 제공하는 연산자로, 벡터 간의 코사인 거리를 계산합니다. 1 - distance를 하면 유사도가 됩니다. <br>
+<br>
+CLIP 모델: OpenAI가 공개한 이 모델은 이미지뿐만 아니라 텍스트로도 이미지를 찾을 수 있게 해줍니다 <br>
+(model.encode("A cute dog")를 쿼리로 사용 가능).<br>
+<br>
+성능 최적화: 데이터가 많아지면 아래와 같은 명령으로 HNSW 인덱스를 생성해 검색 속도를 높이세요. <br>
+CREATE INDEX ON image_embeddings USING hnsw (embedding vector_cosine_ops);
