@@ -1,16 +1,14 @@
 ### image_vector_search
 
 #### 1. 테스트용 이미지 데이터셋
-인터넷상에서 바로 URL 형태로 접근하여 테스트할 수 있는 데이터셋들입니다.
+테스트용 이미지 데이터셋은 아래 URL에서 다운 받을 수 있습니다. <br>
+https://www.robots.ox.ac.uk/~vgg/data/pets/
 
-Unsplash Source: https://images.unsplash.com/photo-12345678 형식으로 다양한 고해상도 이미지를 테스트할 수 있습니다.
-
-FastAI Dogs vs Cats: 간단한 분류 테스트용으로 좋습니다. 데이터셋 링크
-
-COCO Dataset: 객체 탐지 및 캡셔닝용 데이터셋으로, 검색 엔진 테스트에 가장 적합합니다. COCO Explorer에서 이미지 URL을 얻을 수 있습니다.
+FastAI Dogs vs Cats: 간단한 분류 테스트용으로 좋습니다. 
 
 #### 2. PostgreSQL (pgvector) 준비
-먼저 DB에 접속하여 확장 기능을 설치하고 테이블을 만듭니다. OpenAI의 CLIP 모델(clip-vit-base-patch32)을 사용할 경우 벡터 차원은 512입니다.
+먼저 DB에 접속하여 확장 기능을 설치하고 테이블을 만듭니다. <br>
+OpenAI의 CLIP 모델(clip-vit-base-patch32)을 사용할 경우 벡터 차원은 512입니다.
 
 SQL
 ```
