@@ -29,6 +29,7 @@ CREATE TABLE image_embeddings (
 Bash
 ```
 pip install streamlit torch torchvision sentence-transformers psycopg2-binary Pillow requests python-dotenv
+pip install -U sentence-transformers huggingface_hub
 ```
 
 #### 4. 수행
